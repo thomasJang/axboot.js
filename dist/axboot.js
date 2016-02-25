@@ -3,11 +3,12 @@
 (function () {
 
     var axboot = {
-        getJSON: function getJSON() {
+        getJSON: function () {
+
             return function (json) {
                 return json ? json : false;
             };
-        }
+        }()
     };
 
     this.axboot = axboot;
